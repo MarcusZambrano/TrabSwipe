@@ -29,23 +29,24 @@ public class MainActivity extends AppCompatActivity {
         contador = 0;
         contadorEstados = 0;
 
+// array dos nomes das regiões
         regiao = new String[] {
-                "Região Sul",
+                "Região Centro-Oeste",
+                "Região Nordeste",
                 "Região Norte",
                 "Região Sudeste",
-                "Região Nordeste",
-                "Região Centro-Oeste"
+                "Região Sul"
         };
-
+// Matriz dos nomes de estados em ordem alfabetica
         estado = new String[][] {
+                {"Distrito Federal","Goiás","Mato Grosso","Mato Grosso do Sul"},
+                {"Alagoas","Bahia","Ceará","Maranhão","Paraíba","Pernambuco","Piauí","Sergipe","Rio Grande do Norte"},
+                {"Acre","Amapá","Amazonas","Pará","Rondônia","Roraima","Tocantins"},
+                {"Espírito Santo","Minas Gerais","Rio de Janeiro","São Paulo"},
                 {"Paraná","Rio Grande do Sul", "Santa Catarina"},
-                {"Amazonas","Roraima", "Amapá","Pará","Tocantins"," Rondônia", "Acre"},
-                {"São Paulo", "Rio de Janeiro","Espírito Santo", "Minas Gerais"},
-                {"Maranhão","Piauí", "Ceará","Rio Grande do Norte","Pernambuco"," Paraíba", "Sergipe","Alagoas", "Bahia"},
-                {"Mato Grosso", "Mato Grosso do Sul", "Goiás","Distrito Federal"}
         };
 
-        //inicialização
+        //inicialização dos contadores
         tvRegiao.setText( regiao[contador]);
         tvEstados.setText(estado[contador][contadorEstados]);
 
